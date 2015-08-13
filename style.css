@@ -19,11 +19,13 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
   padding-top: 10px;
   height: 150px;
 }
+
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
   font-size: inherit;
 }
@@ -304,13 +306,6 @@ html, body {
     line-height: 2.5;
 }
 
-@media screen and (max-width: 1024px) {
-.mdl-layout__header .mdl-layout__drawer-button {
-  margin: 10px 12px;
-}
-
-}
-
 .mdl-mini-footer {
   border-top: 1px solid #cfd8dc;
   height: 60px;
@@ -322,27 +317,28 @@ html, body {
   width: 100%;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
 }
 
 .page-content {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
+  text-align: left
+}
+
+#scroll-tab-3 .page-content {
   text-align: left;
 }
 
 .page-content h1 {
-  max-width: 700px;
   margin: 10px auto;
   font-size: 24px;
   padding: 0 40px;
 }
 
 .page-content p, .page-content ul {
-  font-size: 12px;
-  max-width: 700px;
+  font-size: 13px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -352,6 +348,67 @@ html, body {
   top: -28px;
   right: 5%;
   z-index: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header .mdl-layout__drawer-button {
+    margin: 10px 12px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  .mdl-demo .mdl-layout__content section:not(:last-of-type) {
+      margin: 80px auto 0px;
+      width: 100%;
+      max-width: 960px;
+  }
+
+  .page-content h1 {
+    text-align: right;
+    vertical-align: top;
+    display: inline-table;
+    margin:0 24px 0 0;
+    padding: 0;
+    float: left;
+    height: 200px;
+  }
+
+  .page-content p {
+    text-align: left;
+    line-height: 2em;
+    vertical-align: top;
+    margin: 0 0 0 24px;
+    font-size: 13px;
+    padding: 0;
+  }
+
+  #scroll-tab-3 .page-content ul {
+    margin-left: 150px;
+  }
+
+}
+
+@media (max-width: 479px) {
+  .mdl-demo .mdl-layout__content section:not(:last-of-type) {
+      padding: 40px;
+      margin: 0;
+  }
+
+  .page-content h1 {
+    padding: 0px;
+    text-align: left;
+  }
+
+  .page-content p, .page-content ul {
+    padding: 0;
+    text-align: left;
+  }
+
 }
 
 
