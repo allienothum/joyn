@@ -327,7 +327,7 @@ html, body {
   text-align: left
 }
 
-#scroll-tab-3 .page-content {
+#scroll-tab-2 .page-content {
   text-align: left;
 }
 
@@ -363,7 +363,7 @@ a {
 @media screen and (min-width: 1025px) {
 
   .mdl-demo .mdl-layout__content section:not(:last-of-type) {
-      margin: 80px auto 0px;
+      margin: 40px auto 0px;
       width: 100%;
       max-width: 960px;
   }
@@ -375,20 +375,25 @@ a {
     margin:0 24px 0 0;
     padding: 0;
     float: left;
-    height: 200px;
+    width: 200px;
   }
 
   .page-content p {
     text-align: left;
     line-height: 2em;
     vertical-align: top;
-    margin: 0 0 0 24px;
+    margin: 0 0 40px 24px;
     font-size: 13px;
     padding: 0;
+    float: left;
+    width: 700px;
   }
 
-  #scroll-tab-3 .page-content ul {
-    margin-left: 150px;
+  #scroll-tab-2 .page-content ul, #scroll-tab-3 .page-content ul{
+    padding: 0;
+    width: 690px;
+    float: left;
+     margin: 0 0 40px 40px;
   }
 
 }
@@ -411,6 +416,11 @@ a {
 
 }
 
+.sub-header {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
 
 
 
