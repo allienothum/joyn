@@ -124,7 +124,7 @@ html, body {
 .mdl-layout__content {
   margin-bottom: 75px;
 }
-.mdl-demo .mdl-layout__content section:not(:last-of-type) {
+.mdl-demo .mdl-layout__content section {
   position: relative;
   margin-bottom: 30px;
 }
@@ -373,7 +373,7 @@ a {
 
 @media screen and (min-width: 1025px) {
 
-  .mdl-demo .mdl-layout__content section:not(:last-of-type) {
+  .mdl-demo .mdl-layout__content section {
       margin: 40px auto 0px;
       width: 100%;
       max-width: 960px;
@@ -400,7 +400,7 @@ a {
     width: 700px;
   }
 
-  #scroll-tab-2 .page-content ul, #scroll-tab-3 .page-content ul{
+  #scroll-tab-2 .page-content ul, #scroll-tab-3 .page-content ul {
     padding: 0;
     width: 690px;
     float: left;
@@ -410,7 +410,7 @@ a {
 }
 
 @media (max-width: 479px) {
-  .mdl-demo .mdl-layout__content section:not(:last-of-type) {
+  .mdl-demo .mdl-layout__content section {
       padding: 40px;
       margin: 0;
   }
@@ -432,6 +432,13 @@ a {
   font-weight: 200;
   letter-spacing: 1px;
 }
+
+
+
+
+
+
+
 
 
 
