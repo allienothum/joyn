@@ -20,6 +20,13 @@ html, body {
   padding: 0;
 }
 
+.mdl-mini-footer {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
   padding-top: 10px;
@@ -114,6 +121,9 @@ html, body {
   z-index: 999;
 }
 
+.mdl-layout__content {
+  margin-bottom: 75px;
+}
 .mdl-demo .mdl-layout__content section:not(:last-of-type) {
   position: relative;
   margin-bottom: 30px;
@@ -309,9 +319,10 @@ html, body {
 .mdl-mini-footer {
   border-top: 1px solid #cfd8dc;
   height: 60px;
+  width: 100%;
   padding: 20px 0 0;
-  position: relative;
-  overflow: visible;
+  position: fixed;
+  z-index: 3000;
 }
 .mdl-mini-footer .mdl-logo {
   width: 100%;
